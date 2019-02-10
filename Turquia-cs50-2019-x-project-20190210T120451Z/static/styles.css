@@ -1,0 +1,50 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+    font-family: "Arial";
+}
+nav .navbar-brand .green
+{
+    color:#8B0000;
+}
+/* colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+    border: 1px solid #2E8B57;
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+    display:block;
+    margin:0 auto;
+}
+/* position javascript*/
+.stockdata
+{
+    position:absolute;
+    top:75px;
+    left:0;
+
+}

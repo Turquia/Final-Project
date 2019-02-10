@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <div class = "centered">
+    <p>Password shall satisfy the following criteria:</p>
+    <ul class="list-group list-group-flush">
+        <li class = "list-group-item">Password length is greater than 4</li>
+        <li class = "list-group-item">Password contains digits</li>
+        <li class = "list-group-item">Password contains upper and lowercase letters</li>
+        <li class = "list-group-item">Password contains symbols</li>
+        <p></p>
+    </ul>
+    </div>
+    <form action = "/register" method = "post">
+        <div>
+            <input autocomplete = "off" autofocus class = "form-control" name = "username" placeholder = "Username" type = "text" />
+        </div>
+        <div class = "form-group">
+            <p></p>
+            <input autocomplete = "off" autofocus class = "form-control" name = "password" placeholder = "password " type = "password" />
+        </div>
+        <div class = "form-group">
+            <input autocomplete  = "off" autofocus class = "form-control" name = "confirmation" placeholder = "password" type = "password" />
+        </div>
+        <button class = "btn btn-info" type = "submit">Register</button>
+    </form>
+{% endblock %}
